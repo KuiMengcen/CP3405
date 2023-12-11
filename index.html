@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Management System - Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Chart.js Library for charts -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <header>
+        <div id="banner">
+            <h3>You have a request from aduit team! [11/12/2023]10:00a.m</h3>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="admin.html">Admin Dashboard</a></li>
+                <li><a href="survey.html">Survey</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="user-profile">
+            <h2>Your Profile</h2>
+            <div class="profile-details">
+                <p><strong>Name:</strong> Alex Johnson</p>
+                <p><strong>Department:</strong> Marketing</p>
+                <p><strong>Email:</strong> alex.johnson@example.com</p>
+                <p><strong>Phone:</strong> +123-456-7890</p>
+            </div>
+        </section>
+
+        <div class="dashboard">
+            <!-- Signups Widget -->
+            <div class="widget signups">
+                <h2>Daily Signups</h2>
+                <canvas id="signups-chart"></canvas>
+                <p><strong>9,120</strong> Signups past 30 days</p>
+                <!-- Additional stats -->
+            </div>
+
+            <!-- MRR Widget -->
+            <div class="widget mrr">
+                <h2>Monthly Recurring Revenue (MRR)</h2>
+                <p id="mrr-value" class="highlight"></p>
+                <p id="mrr-change"></p>
+                <!-- List of recent MRR changes -->
+                <!-- Additional stats -->
+            </div>
+
+            <!-- Support Stats Widget -->
+            <div class="widget support-stats">
+                <h2>Support Stats</h2>
+                <p id="csat-value" class="highlight"></p>
+                <p id="first-response-time"></p>
+                <p id="ticket-volume"></p>
+                <!-- Additional stats -->
+            </div>
+
+            <!-- Additional widgets as necessary -->
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2023 Survey Management System</p>
+    </footer>
+
+    <!-- Dashboard JavaScript -->
+    <script src="dashboard.js"></script>
+</body>
+</html>
