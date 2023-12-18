@@ -1,0 +1,23 @@
+﻿1,What is your age?,Number,NULL,demographic
+2,What is your gender?,Multiple choice,"Male,Female",demographic
+3,What is your nationality?,Text,NULL,demographic
+4,Where are you currently residing?,Text,NULL,demographic
+5,What is your highest level of education?,Dropdown,"Preschool,Elementary School,Junior Highschool,Senior Highschool,Undergraduate Level,Postgraduate Level,Master Degree,Phd/Doctorate Degree",education
+6,What is your current academic level?,Dropdown,"Preschool,Elementary School,Junior Highschool,Senior Highschool,Undergraduate Level,Postgraduate Level,Master Degree,Phd/Doctorate Degree",education
+7,What is your field of specialization?,Text,NULL,education
+8,How satisfied are you with your current educational program?,Scale,"1,2,3,4,5",education
+9,What types of educational technology tools do you find most effective?,Text,NULL,education
+10,What teaching methods do you find most engaging and effective?,Text,NULL,education
+11,"How important do you consider hands-on, practical learning experiences?
+",Scale,"1,2,3,4,5",education
+12,How satisfied are you with the current assessment methods used in your educational program?,Scale,"1,2,3,4,5",education
+13,How would you describe your preferred learning environment?,Multiple choice,"Small class size,Interactive teaching,Use of technology,Collarborative projects",education
+14,What factors contribute most to your learning experience?,Multiple choice,"Lectures,Group Discussions,Hand-on Activities,Online Tutorials",education
+15,What are your career aspirations or educational goals for the future?,Text,NULL,education
+16,"How well do you feel your current education is preparing you for your future career or further education?
+",Scale,"1,2,3,4,5",education
+17,What challenges do you face in your current educational experience?,Text,,education
+18,"Are there any specific barriers that hinder your learning progress?
+",Text,NULL,education
+19,"On a scale of 1 to 10, how satisfied are you with your overall educational experience?
+",Scale,"1,2,3,4,5",education
