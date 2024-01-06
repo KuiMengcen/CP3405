@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dashboard</title>
+<style>
+    body {
+        font-family: 'Arial', sans-serif;
+        margin: 0;
+        padding: 0;
+        display: flex;
+    }
+    .sidebar {
+        width: 250px;
+        background-color: #f2f2f7;
+        height: 100vh; /* Full height */
+        padding: 20px;
+        box-sizing: border-box;
+    }
+    .sidebar .menu {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+    .sidebar .menu li a {
+        text-decoration: none;
+        color: #333;
+        display: block;
+        padding: 10px;
+        border-radius: 8px;
+        margin-bottom: 10px;
+        box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    }
+    .sidebar-header {
+        font-size: 24px;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+    .content {
+        padding: 20px;
+        flex-grow: 1;
+    }
+    .panel {
+        background-color: white;
+        border-radius: 8px;
+        padding: 20px;
+        margin-bottom: 20px;
+        box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    }
+    .header {
+        background-color: #5856d6;
+        color: white;
+        padding: 20px;
+        border-radius: 8px;
+        margin-bottom: 20px;
+    }
+    .survey-list {
+        list-style: none;
+        padding: 0;
+    }
+    .survey-list li {
+        padding: 10px;
+        background-color: #ebedf0;
+        margin-bottom: 10px;
+        border-radius: 8px;
+    }
+    .survey-list li span {
+        float: right;
+    }
+</style>
+</head>
+<body>
+
+<div class="sidebar">
+    <div class="sidebar-header">Survey</div>
+    <ul class="menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="survey.html">Surveys</a></li>
+        <li><a href="admin_dashboard.html">Admin Dashboard</a></li>
+    </ul>
+</div>
+
+<div class="content">
+    <div class="header">
+        <h1>Dashboard</h1>
+    </div>
+    <div class="panel">
+        <h2>Newsflash!</h2>
+        <p>We have a new questionnaire.</p>
+    </div>
+
+    <div class="panel">
+        <h1>Your Profile</h1>
+        <p><strong>Name:</strong> Alex Johnson</p>
+        <p><strong>Department:</strong> Marketing</p>
+        <p><strong>Email:</strong> alex.johnson@example.com</p>
+        <p><strong>Phone:</strong> +123-456-7890</p>
+    </div>
+
+    <div class="panel">
+        <h2>Your Surveys</h2>
+        <ul class="survey-list">
+            <li>Satisfaction surveys: Customer, employee satisfaction <span>90%</span></li>
+            <li>Market research: Market trends, consumer preferences <span>92%</span></li>
+            <li>Health surveys: The health of individuals or groups <span>53%</span></li>
+            <li>Social research: Social phenomena, public opinion <span>2%</span></li>
+        </ul>
+    </div>
+</div>
+
+</body>
+</html>

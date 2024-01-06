@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>User Profile Dashboard</title>
+<style>
+  body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    background-color: #F4F7FC;
+  }
+  .sidebar {
+    width: 250px;
+    background-color: #f2f2f7;
+    height: 100vh; /* Full height */
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  .sidebar-header {
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 30px;
+    color: #8E44AD;
+  }
+  .sidebar a {
+    text-decoration: none;
+    color: white;
+    display: block;
+    padding: 10px 0;
+    transition: background-color 0.3s;
+  }
+  .sidebar a:hover {
+    background-color: #3498DB;
+    border-radius: 4px;
+  }
+  .profile-container {
+    flex-grow: 1;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .profile-card {
+    background: white;
+    border-radius: 20px;
+    padding: 20px;
+    width: 80%;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .profile-card img {
+    border-radius: 50%;
+    width: 100px; /* Adjust as needed */
+  }
+  .profile-info {
+    text-align: left;
+    flex-grow: 1;
+  }
+  .profile-info h3 {
+    color: #333;
+    margin: 0 0 10px 0;
+  }
+  .profile-info p {
+    margin: 0;
+  }
+  .content-section {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+  }
+  .section {
+    background: #FFFFFF;
+    border-radius: 20px;
+    padding: 20px;
+    width: 48%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+  }
+  .section h4 {
+    color: #333;
+    border-bottom: 1px solid #DDD;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+  }
+  .section .email-form {
+    display: flex;
+    flex-direction: column;
+  }
+  .section .email-form input,
+  .section .email-form textarea,
+  .section .email-form button {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #DDD;
+    border-radius: 4px;
+  }
+  .section .email-form button {
+    background-color: #3498DB;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+</style>
+</head>
+<body>
+
+<div class="sidebar">
+  <div class="sidebar-header">moony</div>
+  <a href="index.html">Home</a>
+  <a href="survey.html">Surveys</a>
+  <a href="admin_dashboard.html">Admin Dashboard</a>
+  <div>
+    <!-- Sidebar image and additional links here -->
+  </div>
+</div>
+
+<div class="profile-container">
+  <div class="profile-card">
+    <img src="user-image.jpg" alt="Haley" />
+    <div class="profile-info">
+      <h3>Name: Haley</h3>
+      <p>Age: 23</p>
+      <p>Birthday : 1.14</p>
+      <p>Occupation: student</p>
+    </div>
+  </div>
+
+  <div class="content-section">
+    <div class="section">
+      <h4>Analytics and Reporting</h4>
+      <p>Satisfaction surveys : 100%</p>
+      <p>Market research : 50%</p>
+      <p>Health surveys: 0%</p>
+    </div>
+    <div class="section">
+      <h4>Feedback</h4>
+      <form class="email-form">
+        <input type="email" placeholder="Email">
+        <textarea placeholder="Suggestions"></textarea>
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
+
+
