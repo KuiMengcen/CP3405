@@ -1,75 +1,135 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Survey Management System - Dashboard</title>
-    <link rel="stylesheet" href="style.css">
-    <!-- Chart.js Library for charts -->
-    <!-- comfirm -->
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dashboard</title>
+<style>
+    body {
+        font-family: 'Arial', sans-serif;
+        margin: 0;
+        padding: 0;
+        display: flex;
+    }
+    .sidebar {
+        width: 250px;
+        background-color: #f2f2f7;
+        height: 100vh; /* Full height */
+        padding: 20px;
+        box-sizing: border-box;
+    }
+    .sidebar .menu {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+    .sidebar .menu li a {
+        text-decoration: none;
+        color: #333;
+        display: block;
+        padding: 10px;
+        border-radius: 8px;
+        margin-bottom: 10px;
+        box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    }
+
+    .sidebar a {
+        text-decoration: none;
+        color: #333;
+        display: block;
+        padding: 10px;
+        margin-bottom: 10px;
+        border-radius: 8px;
+        background-color: white;
+        box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        transition: background-color 0.3s;
+    }
+    
+    .sidebar-header {
+        font-size: 24px;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+    .content {
+        padding: 20px;
+        flex-grow: 1;
+    }
+    .panel {
+        background-color: white;
+        border-radius: 8px;
+        padding: 20px;
+        margin-bottom: 20px;
+        box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    }
+    .header {
+        background-color: #5856d6;
+        color: white;
+        padding: 20px;
+        border-radius: 8px;
+        margin-bottom: 20px;
+    }
+    .survey-list {
+        list-style: none;
+        padding: 0;
+    }
+    .survey-list li {
+        padding: 10px;
+        background-color: #ebedf0;
+        margin-bottom: 10px;
+        border-radius: 8px;
+    }
+    .survey-list li span {
+        float: right;
+    }
+    #banner {
+    background-color: yellow;
+    font: bolder;
+    color: black;
+    width: fit-content;
+}
+</style>
 </head>
 <body>
-    <header>
+
+<div class="sidebar">
+    <div class="sidebar-header">Survey</div>
+    <ul class="menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="survey.html">Surveys</a></li>
+        <li><a href="admin_dashboard.html">Admin Dashboard</a></li>
+    </ul>
+</div>
+
+<div class="content">
+    <div class="header">
+        <h1>Dashboard</h1>
         <div id="banner">
-            <h3>You have a request from aduit team! [11/12/2023]10:00a.m</h3>
+            <h3>You have a request from aduit team! [2024/1/23]4:00a.m</h3>
         </div>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="admin.html">Admin Dashboard</a></li>
-                <li><a href="survey.html">Survey</a></li>
-            </ul>
-        </nav>
-    </header>
+    </div>
+    <div class="panel">
+        <h2>Newsflash!</h2>
+        <p>We have a new questionnaire.</p>
+    </div>
 
-    <main>
-        <section id="user-profile">
-            <h2>Your Profile</h2>
-            <div class="profile-details">
-                <p><strong>Name:</strong> Alex Johnson</p>
-                <p><strong>Department:</strong> Marketing</p>
-                <p><strong>Email:</strong> alex.johnson@example.com</p>
-                <p><strong>Phone:</strong> +123-456-7890</p>
-            </div>
-        </section>
+    <div class="panel">
+        <h1>Your Profile</h1>
+        <p><strong>Name:</strong> Alex Johnson</p>
+        <p><strong>Department:</strong> Marketing</p>
+        <p><strong>Email:</strong> alex.johnson@example.com</p>
+        <p><strong>Phone:</strong> +123-456-7890</p>
+    </div>
 
-        <div class="dashboard">
-            <!-- Signups Widget -->
-            <div class="widget signups">
-                <h2>Daily Signups</h2>
-                <canvas id="signups-chart"></canvas>
-                <p><strong>9,120</strong> Signups past 30 days</p>
-                <!-- Additional stats -->
-            </div>
+    <div class="panel">
+        <h2>Your Surveys</h2>
+        <ul class="survey-list">
+            <li>Satisfaction surveys: Customer, employee satisfaction <span>90%</span></li>
+            <li>Market research: Market trends, consumer preferences <span>92%</span></li>
+            <li>Health surveys: The health of individuals or groups <span>53%</span></li>
+            <li>Social research: Social phenomena, public opinion <span>2%</span></li>
+        </ul>
+    </div>
+</div>
 
-            <!-- MRR Widget -->
-            <div class="widget mrr">
-                <h2>Monthly Recurring Revenue (MRR)</h2>
-                <p id="mrr-value" class="highlight"></p>
-                <p id="mrr-change"></p>
-                <!-- List of recent MRR changes -->
-                <!-- Additional stats -->
-            </div>
-
-            <!-- Support Stats Widget -->
-            <div class="widget support-stats">
-                <h2>Support Stats</h2>
-                <p id="csat-value" class="highlight"></p>
-                <p id="first-response-time"></p>
-                <p id="ticket-volume"></p>
-                <!-- Additional stats -->
-            </div>
-
-            <!-- Additional widgets as necessary -->
-        </div>
-    </main>
-
-    <footer>
-        <p>© 2023 Survey Management System</p>
-    </footer>
-
-    <!-- Dashboard JavaScript -->
-    <script src="dashboard.js"></script>
 </body>
 </html>
