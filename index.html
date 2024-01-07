@@ -4,6 +4,28 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Dashboard</title>
+    <!-- Hengyu： Write comments pls 请写注释 -->
+ <!-- 
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
+
+  <link rel="stylesheet" href="style.css">
+
+  <!-- 
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;900&display=swap"
+    rel="stylesheet">
+
+  <!-- 
+    - material icon link
+  -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    rel="stylesheet" />
 <style>
     body {
         font-family: 'Arial', sans-serif;
@@ -86,7 +108,7 @@
     font: bolder;
     color: black;
     width: fit-content;
-}
+    }
 </style>
 </head>
 <body>
@@ -108,20 +130,200 @@
         </div>
     </div>
     <div class="panel">
-        <h2>Newsflash!</h2>
-        <p>We have a new questionnaire.</p>
+        <h2>Good evening! Alex</h2>
+        <p>We have a new questionnaire for you.</p>
     </div>
 
+    <!-- profile part 用户部分 -->
     <div class="panel">
-        <h1>Your Profile</h1>
-        <p><strong>Name:</strong> Alex Johnson</p>
-        <p><strong>Department:</strong> Marketing</p>
-        <p><strong>Email:</strong> alex.johnson@example.com</p>
-        <p><strong>Phone:</strong> +123-456-7890</p>
+    <section class="home">
+
+        <div class="card profile-card">
+    
+          <div class="profile-card-wrapper">
+    
+            <figure class="card-avatar">
+                <img src="./images/avatar-1.jpg" alt="Alex Johnson" width="48" height="48">
+              </figure>
+    
+              <div>
+                <p class="card-title">Alex Johnson</p>
+                <p class="card-subtitle">Age: 21</p>
+                <p class="card-subtitle">Department:Marketing</p>
+                <a href="">More</a>
+              </div>
+    
+            </div>
+    
+            <ul class="contact-list">
+    
+              <li>
+                <a href="mailto:xyz@mail.com" class="contact-link icon-box">
+                  <span class="material-symbols-rounded  icon">mail</span>
+    
+                  <p class="text">alex.johnson@example.com</p>
+                </a>
+              </li>
+    
+              <li>
+                <a href="tel:00123456789" class="contact-link icon-box">
+                  <span class="material-symbols-rounded  icon">call</span>
+    
+                  <p class="text">+123-456-7890</p>
+                </a>
+              </li>
+    
+          </ul>
+    
+          <div class="divider card-divider"></div>
+    
+          <ul class="progress-list">
+    
+            <li class="progress-item">
+    
+              <div class="progress-label">
+                <p class="progress-title">Survey Completion</p>
+    
+                <data class="progress-data" value="85">85%</data>
+              </div>
+    
+              <div class="progress-bar">
+                <div class="progress" style="--width: 85%; --bg: var(--blue-ryb);"></div>
+              </div>
+    
+            </li>
+    
+            <li class="progress-item">
+    
+              <div class="progress-label">
+                <p class="progress-title">Overall Speed</p>
+    
+                <data class="progress-data" value="7.5">13mins per survey</data>
+              </div>
+    
+              <div class="progress-bar">
+                <div class="progress" style="--width: 75%; --bg: var(--coral);"></div>
+              </div>
+    
+            </li>
+    
+          </ul>
+    
+        </div>
+    
+        <div class="card-wrapper">
+    
+          <div class="card task-card">
+    
+            <div class="card-icon icon-box green">
+              <span class="material-symbols-rounded  icon">task_alt</span>
+            </div>
+    
+            <div>
+              <data class="card-data" value="21">21</data>
+    
+              <p class="card-text">Surveys Completed</p>
+            </div>
+    
+          </div>
+    
+          <div class="card task-card">
+    
+            <div class="card-icon icon-box blue">
+              <span class="material-symbols-rounded  icon">drive_file_rename_outline</span>
+            </div>
+    
+            <div>
+              <data class="card-data" value="21">4</data>
+    
+              <p class="card-text">Surveys Inprogress</p>
+            </div>
+    
+          </div>
+    
+        </div>
+    
+        <div class="card revenue-card">
+    
+          <button class="card-menu-btn icon-box" aria-label="More" data-menu-btn>
+            <span class="material-symbols-rounded  icon">more_horiz</span>
+          </button>
+    
+          <ul class="ctx-menu">
+    
+            <li class="ctx-item">
+              <button class="ctx-menu-btn icon-box">
+                <span class="material-symbols-rounded  icon" aria-hidden="true">edit</span>
+    
+                <span class="ctx-menu-text">Edit</span>
+              </button>
+            </li>
+    
+            <li class="ctx-item">
+              <button class="ctx-menu-btn icon-box">
+                <span class="material-symbols-rounded  icon" aria-hidden="true">cached</span>
+    
+                <span class="ctx-menu-text">Refresh</span>
+              </button>
+            </li>
+    
+          </ul>
+    
+          <p class="card-title">Total participants</p>
+    
+          <data class="card-price" value="2100">1,700</data>
+    
+          <p class="card-text">Last Week</p>
+    
+          <div class="divider card-divider"></div>
+    
+          <ul class="revenue-list">
+    
+            <li class="revenue-item icon-box">
+    
+              <span class="material-symbols-rounded  icon  green">trending_up</span>
+    
+              <div>
+                <data class="revenue-item-data" value="15">15%</data>
+    
+                <p class="revenue-item-text">Prev Week</p>
+              </div>
+    
+            </li>
+    
+            <li class="revenue-item icon-box">
+    
+              <span class="material-symbols-rounded  icon  red">trending_down</span>
+    
+              <div>
+                <data class="revenue-item-data" value="10">10%</data>
+    
+                <p class="revenue-item-text">Prev Month</p>
+              </div>
+    
+            </li>
+    
+          </ul>
+    
+        </div>
+    
+      </section>
     </div>
 
+    <!-- loading circle -->
     <div class="panel">
-        <h2>Your Surveys</h2>
+    <div class="container">
+        <div class="circular-progress">
+            <span class="progress-value">0%</span>
+        </div>
+        <span class="text">Answer similarity rate</span>
+    </div>
+</div>
+        
+
+    <!-- survey part -->
+    <div class="panel">
+        <h2>Surveys</h2>
         <ul class="survey-list">
             <li>Satisfaction surveys: Customer, employee satisfaction <span>90%</span></li>
             <li>Market research: Market trends, consumer preferences <span>92%</span></li>
@@ -130,6 +332,9 @@
         </ul>
     </div>
 </div>
+
+<!-- JavaScript -->
+<script src="js/script.js"></script>
 
 </body>
 </html>
