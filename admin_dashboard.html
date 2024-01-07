@@ -124,6 +124,20 @@
     border: none;
     cursor: pointer;
   }
+  .email_address {
+            width: 180px;
+            height: 50px;
+            border-radius: 25px;
+            margin-top: 50px;
+            font-weight: 700;
+            font-size: 14px;
+            letter-spacing: 1.15px;
+            background-color: #4B70E2;
+            color: #f9f9f9;
+            box-shadow: 8px 8px 16px #d1d9e6, -8px -8px 16px #f9f9f9;
+            border: none;
+            outline: none;
+        }
 </style>
 </head>
 <body>
@@ -143,9 +157,12 @@
     <div class="profile-info">
       <h3>Name: Haley</h3>
       <p>Age: 23</p>
-      <p>Birthday : 1.14</p>
-      <p>Occupation: student</p>
+      <p>Birthday : 1/14</p>
+      <p>Department: Marketing</p>
+      <p>Occupation: Manager</p>
+      <a href="">More</a>
     </div>
+    
   </div>
 
   <div class="content-section">
@@ -155,6 +172,7 @@
       <p>Market research : 50%</p>
       <p>Health surveys: 0%</p>
     </div>
+    
 
     <div class="section">
       <h4>Feedback</h4>
@@ -165,6 +183,16 @@
       </form>
     </div>
   </div>
+  <div class="section">
+  <h4>Want to remind users who didn't finish the surveys?</h4>
+  <div>
+    <button class="email_address">Send Email</button>
+</div>
+<div>
+    <button class="email_address" onclick="window.location.href='email_address.html'">Download Email Address</button>
+</div>
+</div>
+
 </div>
 
 </body>
