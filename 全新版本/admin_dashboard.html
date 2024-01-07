@@ -19,17 +19,35 @@
     padding: 20px;
     box-sizing: border-box;
   }
+  .sidebar .menu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  }
+
+  .sidebar .menu li a {
+    text-decoration: none;
+    color: #333;
+    display: block;
+    padding: 10px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  }
   .sidebar-header {
     font-size: 24px;
     text-align: center;
     margin-bottom: 30px;
-    color: #8E44AD;
   }
   .sidebar a {
     text-decoration: none;
-    color: white;
+    color: #333;
     display: block;
-    padding: 10px 0;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    background-color: white;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
     transition: background-color 0.3s;
   }
   .sidebar a:hover {
@@ -111,13 +129,12 @@
 <body>
 
 <div class="sidebar">
-  <div class="sidebar-header">moony</div>
-  <a href="index.html">Home</a>
-  <a href="survey.html">Surveys</a>
-  <a href="admin_dashboard.html">Admin Dashboard</a>
-  <div>
-    <!-- Sidebar image and additional links here -->
-  </div>
+  <div class="sidebar-header">Survey</div>
+  <ul class="menu">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="survey.html">Surveys</a></li>
+    <li><a href="admin_dashboard.html">Admin Dashboard</a></li>
+  </ul>
 </div>
 
 <div class="profile-container">
@@ -138,6 +155,7 @@
       <p>Market research : 50%</p>
       <p>Health surveys: 0%</p>
     </div>
+
     <div class="section">
       <h4>Feedback</h4>
       <form class="email-form">
